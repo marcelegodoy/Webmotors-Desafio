@@ -1,0 +1,154 @@
+<html>
+<head>
+  <title>Webmotors Form</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar-vehicle-options form-container justify-content-center">
+      <div class="row justify-content-between" id="navbar-options">
+        <nav class="nav" id="nav-tab" role="tablist">
+          <div class="buy-car-tab">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-car" role="tab" aria-controls="nav-car" aria-selected="true">
+              <i class="fas fa-car fa-2x"></i>
+              <div class="vehicle-type-option">
+                <h4>COMPRAR</h4>
+                <h1>CARROS</h1></a>
+              </div>
+          </div>
+          <div class="buy-moto-tab">
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-moto" role="tab" aria-controls="nav-moto" aria-selected="false">
+              <i class="fas fa-motorcycle fa-2x"></i>
+              <div class="vehicle-type-option">
+                <h4>COMPRAR</h4>
+                <h1>MOTOS</h1></a>
+              </div>
+          </div>
+        </nav>
+        <div class="sell-car">
+          <button type="button" class="btn btn-outline-warning">Vender meu carro</button>
+        </div>
+      </div>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+      </div>
+    </div>
+      <div class="row justify-content-center">
+        <div class="card">
+          <div class="card-body">
+            <div class="checkbok-vehicle-type form-inline">
+                <div class="form-check">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Novo</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">Usado</label>
+                  </div>
+                </div>
+            </div>
+            <div class="header">
+              <div class="header-row">
+                <div class="form-row name-brand-model">
+                    <div class="col-md-6 mb-3">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Onde: São Paulo - SP">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Raio: 100km</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <select class="custom-select" id="all-brands" required>
+                        <option selected disabled value="">Marca: Todas</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <select class="custom-select" id="validationCustom04" required>
+                        <option selected disabled value="">Modelo: <b>Todos</b></option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="header">
+              <div class="header-row">
+                <div class="form-row year-price-version">
+                    <div class="col-md-3 mb-3">
+                      <select class="custom-select" id="validationCustom04" required>
+                        <option selected disabled value="">Ano Desejado</b></option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <select class="custom-select" id="validationCustom04" required>
+                        <option selected disabled value="">Faixa de Preço</b></option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <select class="custom-select" id="validationCustom04" required>
+                        <option selected disabled value="">Versão: Todas</b></option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="search-options form-row justify-content-between">
+              <div class="more-options">
+                <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <b>Busca Avançada</b></a>
+              </div>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Mais opções aqui.
+                </div>
+              </div>
+
+              <div class="search-form">
+                <a href="" class="clean-filter mr-10">Limpar Filtros</a>
+                <input type="submit" value="VER OFERTAS" class="btn btn-danger btn-lg" id="submit">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="lib/index.js"></script>
+</body>
+</html>

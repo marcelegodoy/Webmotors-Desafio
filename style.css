@@ -1,0 +1,290 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+@media screen and (max-width: 933px) {
+  .card-body{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-body{
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+#navbar-options {
+  display: flex;
+  max-width: 933px;
+  margin: auto;
+}
+
+/*card-background styles*/
+
+.card {
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 4px;
+}
+
+.card-body {
+    box-shadow: 0 8px 20px 0 rgba(158,184,209,.43);
+    border-radius: 4px;
+    background-color: white;
+    padding: 60px 30px;
+    width: 933px;
+    max-width: -webkit-fill-available;
+    min-height: 312px;
+    margin: 0 auto;
+}
+
+/*card-background styles end*/
+
+/*link styles*/
+
+a {
+  color: #f3123c;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+a.clean-filter {
+  color: #94949e!important;
+}
+
+a:hover.clean-filter {
+  color: #f3123c!important;
+}
+
+
+/*link styles end*/
+
+.sell-car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*button styles*/
+
+.btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+  padding: 10 30px;
+  border-style: solid;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-danger {
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 8px 12px -8px #f3123c;
+    background-color: #f3123c;
+    border-color: #f3123c;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #ecedf2;
+}
+
+/*button styles end*/
+
+.checkbok-vehicle-type {
+  align-items: center;
+}
+
+#new-vehicle {
+  weight: 20px;
+}
+
+.search-options {
+  align-items: center;
+  margin: 10px 0;
+}
+
+.clean-filter {
+  margin-right: 15px;
+}
+
+/*vehicle options*/
+
+.buy-car-tab {
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.buy-car-tab h4 {
+  margin-right: 0.5rem;
+  color: #94949e;
+  font-size: 1rem;
+  margin-bottom: -5px;
+}
+
+.buy-car-tab h1 {
+  font-size: 2rem;
+}
+
+.buy-moto-tab {
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.buy-moto-tab h4 {
+  color: #94949e;
+  font-size: 1rem;
+  margin-bottom: -5px;
+}
+
+.buy-moto-tab h1 {
+  font-size: 2rem;
+}
+
+.nav-link {
+  padding: 0 0.25rem;
+}
+
+.nav-link.active {
+  color: #f3123c;
+}
+
+.nav-link.active.fas {
+  color: #f3123c;
+}
+
+.nav-link {
+  color: #94949e;
+}
+
+.nav-link.fas {
+  color: #94949e;
+}
+
+.navbar-vehicle-options {
+  margin-bottom: 10px;
+}
+/*vehicle options end*/
+
+
+/*form style*/
+.form-control {
+    border: 2px solid #ecedf2;
+}
+
+.custom-select {
+    background: url("https://image.flaticon.com/icons/svg/566/566004.svg") no-repeat right .75rem center/8px 10px;
+    background-color: #fff;
+    border: 2px solid #ecedf2;
+}
+
+.input-group>.form-control:not(:last-child) {
+    background: url(https://image.flaticon.com/icons/svg/684/684908.svg) no-repeat left 0.5rem center/15px 15px;
+    background-size: 24px 24px;
+    border-top-left-radius: 5px;
+    padding-left: 40px;
+    border-bottom-left-radius: 5px;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*form style end*/
+
+
+
+/* style the unchecked checkbox */
+
+.form-check {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+label.custom-control-label {
+  margin-right: 20px;
+}
+
+.custom-control-label::after {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    content: "";
+    background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border: #ecedf2 solid 1px;
+    background-color: #f3123c;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 2px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: #f3123c;
+    border: #ecedf2 solid 1px;
+}
+
+.custom-control-label::before {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    border-radius: 2px;
+    pointer-events: none;
+    background-color: #fff;
+    border: #ecedf2 solid 1px;
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* style the checked checkbox */
+
+/* style for focus on form */
+
+.form-control:focus {
+        border-color: #ecedf2;
+        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.20);
+    }
+
+.custom-select:focus {
+        border-color: #ecedf2;
+        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.20);
+    }
+
+.custom-control-label:focus {
+        border-color: #ecedf2;
+        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.20);
+    }
+
+.dropdown-menu > a:hover {
+    background-color: #ecedf2;
+}
+
+/* tyle for focus on form end */
