@@ -223,8 +223,6 @@ label.custom-control-label {
 .custom-control-label::after {
     position: absolute;
     display: block;
-    width: 25px;
-    height: 25px;
     content: "";
     background: no-repeat 50%/50% 50%;
 }
@@ -236,8 +234,6 @@ label.custom-control-label {
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-    width: 25px;
-    height: 25px;
     background-color: #fff;
     border-radius: 2px;
     font-family: "Font Awesome 5 Free";
@@ -248,8 +244,6 @@ label.custom-control-label {
 }
 
 .custom-control-label::before {
-    width: 25px;
-    height: 25px;
     position: absolute;
     top: .25rem;
     left: -1.5rem;
